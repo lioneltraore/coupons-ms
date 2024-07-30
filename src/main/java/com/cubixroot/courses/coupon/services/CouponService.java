@@ -27,4 +27,8 @@ public class CouponService {
     public List<Coupon> findAll() {
         return couponRepository.findAll();
     }
+
+    public Coupon findByCode(String code) {
+        return couponRepository.findByCode(code);
+    }
 }
